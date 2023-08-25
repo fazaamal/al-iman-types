@@ -8,7 +8,10 @@ function isEventType(object: any): object is EventType {
     typeof object.id === "string" &&
     typeof object.description === "string" &&
     typeof object.location === "string" &&
-    (object.type === "event" || object.type === "class")
+    (object.type === "event" || object.type === "class") && 
+    (object.imgPath === undefined || typeof object.imgPath === "string") &&
+    (object.conductor === undefined || typeof object.conductor === "string") &&
+    (object.contact === undefined || typeof object.contact === "string")
   );
 }
 
@@ -18,7 +21,8 @@ function isAnnouncementType(object: any): object is AnnouncementType {
     typeof object.title === "string" &&
     typeof object.time === "number" &&
     typeof object.id === "string" &&
-    typeof object.description === "string"
+    typeof object.description === "string" &&
+    (object.imgPath === undefined || typeof object.imgPath === "string")
   );
 }
 
