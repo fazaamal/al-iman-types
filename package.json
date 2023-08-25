@@ -1,11 +1,11 @@
 {
   "name": "al-iman-types",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Types for Surau Al-Iman Website",
   "main": "dist/src/index.js",
   "scripts": {
     "build": "tsc",
-    "prepare": "tsc"
+    "prepare": "npx tsc"
   },
   "repository": {
     "type": "git",
