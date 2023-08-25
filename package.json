@@ -1,0 +1,19 @@
+{
+  "name": "al-iman-types",
+  "version": "1.0.2",
+  "description": "Types for Surau Al-Iman Website",
+  "main": "dist/src/index.js",
+  "scripts": {
+    "build": "tsc",
+    "prepare": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fazaamal/al-iman-types.git"
+  },
+  "author": "fazaamal",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fazaamal/al-iman-types/issues"
+  }
+}
