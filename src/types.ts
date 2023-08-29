@@ -3,12 +3,14 @@ interface EventType {
   time: string,
   id: string,
   description: string,
+  location: string,
+  type: "event" | "class"
   imgPath?: string,
   conductor?: string,
-  location: string,
   contact?: string,
-  type: "event" | "class"
 };
+
+interface NewEventType extends Omit<EventType, "id"> {};
 
 interface AnnouncementType {
   title: string,
@@ -18,7 +20,11 @@ interface AnnouncementType {
   imgPath?: string,
 }
 
+interface NewAnnouncementType extends Omit<AnnouncementType, "id"> {}
+
 export type {
   EventType,
-  AnnouncementType
+  AnnouncementType,
+  NewEventType,
+  NewAnnouncementType
 }
