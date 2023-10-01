@@ -8,23 +8,40 @@ interface EventType {
   imgPath?: string,
   conductor?: string,
   contact?: string,
+  timeAdded: number
 };
 
-interface NewEventType extends Omit<EventType, "id"> {};
+interface NewEventType extends Omit<EventType, "id" | "timeAdded"> {};
 
 interface AnnouncementType {
   title: string,
-  time: number,
   id: string,
   description: string,
   imgPath?: string,
+  timeAdded: number
 }
 
-interface NewAnnouncementType extends Omit<AnnouncementType, "id"> {}
+interface NewAnnouncementType extends Omit<AnnouncementType, "id" | 'timeAdded'> {}
+
+interface SlideType {
+  id: string
+  src: string;
+  alt: string;
+  title: string; 
+  description: string;
+  link? : string;
+  fit?: 'cover' | 'contain';
+  timeAdded: number;
+}
+
+interface NewSlideType extends Omit<SlideType, "id" | "timeAdded"> {}
+
 
 export type {
   EventType,
   AnnouncementType,
   NewEventType,
-  NewAnnouncementType
+  NewAnnouncementType,
+  SlideType,
+  NewSlideType
 }

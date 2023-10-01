@@ -1,4 +1,4 @@
-import { EventType, AnnouncementType, NewEventType, NewAnnouncementType  } from "./types";
+import { EventType, AnnouncementType, NewEventType, NewAnnouncementType, SlideType, NewSlideType  } from "./types";
 import checkType from "./checkType";
 
 export {
@@ -6,5 +6,7 @@ export {
   AnnouncementType,
   NewEventType,
   NewAnnouncementType,
-  checkType
+  checkType,
+  SlideType,
+  NewSlideType
 }
